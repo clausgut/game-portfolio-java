@@ -8,7 +8,7 @@
     width:212px;
 }
 .guessBoxContainer{
-    background-image:url(/assets/images/polkadot.jpg);
+    background-image:url(assets/images/polkadot.jpg);
     color: darkcyan;
     font-size: 35px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -31,7 +31,7 @@
     background-color:wheat;
 }
 .left{
-    background:url(/assets/images/polkadot.jpg);
+    background:url(assets/images/polkadot.jpg);
     width: 480px;
     color:royalblue;
     font-size: 30px;
@@ -61,7 +61,15 @@
     align-content: left;
     margin: 16px 16px 16px 16px;
 }
-
+.row{
+    padding:28px 5px;
+}
+#pictureDisplay{
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 350px;
+    width: 350px;
+}
 
 
 

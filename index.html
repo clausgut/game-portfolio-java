@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <title>js.fungame.com</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <script> src = "assets/js/game.js"</script>
+  <script src="assets/javascript/game.js" type="text/javascript"></script>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 </head>
 
@@ -21,14 +23,14 @@
         <strong>Press any key to start game</strong>
       </p>
       <div class="word text-align-center">
-          <div class="col-md-12">
-              <h5>Current Word</h5>
-              <p class="activeWords"><span id="currentWordDisplay"></span></p>
-              <p class="activeWords" id="revealedAnswerDisplay"></p>
-              <p class="activeWords" id="correctDisplay"></p>      
-              <h6>Letters Already Guessed</h6>
-              <p class="activeWords"><span id="guessesMadeDisplay"></span></p>
-          </div>
+        <div class="col-md-12">
+          <h5>Current Word</h5>
+          <p class="activeWords"><span id="currentWordDisplay"></span></p>
+          <p class="activeWords" id="revealedAnswerDisplay"></p>
+          <p class="activeWords" id="correctDisplay"></p>
+          <h6>Letters Already Guessed</h6>
+          <p class="activeWords"><span id="guessesMadeDisplay"></span></p>
+        </div>
 
       </div>
     </div>
@@ -49,7 +51,15 @@
             <span class="text-align-center" id="winsDisplay">0</span>
           </p>
         </div>
+        <div class="row">
+          <div class="col-md-12 parent">
+            <img src="" id="pictureDisplay" alt="" />
+          </div>
+        </div>
 
       </div>
     </div>
   </div>
+</body>
+
+</html>

@@ -57,8 +57,8 @@ var gameStatus = false;
 var randomNumber = Math.floor(Math.random() * dogBreeds.length);
 
 //Apply randomNumber to obtain random word (answer), and related images.
-var breed = dogBreed[randomNumber].word;
-var dogImage = dogBreed[randomNumber].image
+var breed = dogBreeds[randomNumber].word;
+var dogImage = dogBreeds[randomNumber].image
 
 //Establish lettersRemaining (for win);
 var lettersRemaining = breed.length;
@@ -71,7 +71,7 @@ var answerArray = [];
 
 //Use key events to listen for the letters that your players will type.
 document.addEventListener("keyup", function(event){
-    //If gameStatus (or game round) has been initialized, then proceed to playing.
+    
     if(gameStatus) {
         letterCheck(event);
     } else {
@@ -93,7 +93,7 @@ function letterCheck(guess) {
 //Check whether the guess is correct
 var wins = 0;
 function correctGuessCheck(guess) {
-    if (pokemon.indexOf(guess.key) > -1) {
+    if (breed.indexOf(guess.key) > -1) {
         //if guess is correct, run correctGuess function.
         correctGuess(guess);
     } else {
@@ -124,7 +124,6 @@ function addCorrectLetter(guess) {
                 wins++;
                 //Display new win score.
                 displayWins();
-                //Reveal the Pokemon's identiy.
                 changeImage();
                 //Turn correct answer green.
                 addCorrect();
@@ -191,23 +190,22 @@ function displayCurrentWord() {
     currentWordDisplay.innerHTML = answerArray.join(" ");
 }
 
-//Displays silhouette of Pokemon when game initalizes.
 function displayImage() {
     var pictureDisplay = document.querySelector("#pictureDisplay");
-    pictureDisplay.src = pokemonImage1;
+    pictureDisplay.src = dogImage;
 }
 
 //Reveals Pokemon identiy regardless of whether user was able to solve. 
 function changeImage() {
     var pictureDisplay = document.querySelector("#pictureDisplay");
-    pictureDisplay.src = pokemonImage2;
+    pictureDisplay.src = dogImage;
     gameStatus = false;
 }
 
 //Reveals answer if user is unable to solve.
 function displayAnswer() {
     var revealedAnswerDisplay = document.querySelector("#revealedAnswerDisplay");
-    revealedAnswerDisplay.textContent = pokemon.toUpperCase();
+    revealedAnswerDisplay.textContent = breed.toUpperCase();
 }
 
 //Turns current word green (to indicate correctness)
