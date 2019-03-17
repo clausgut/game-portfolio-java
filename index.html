@@ -5,9 +5,7 @@
   <meta charset="UTF-8">
   <title>js.fungame.com</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script> src ="assets/js/game.js"</script>
+  <script> src = "assets/js/game.js"</script>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
@@ -22,18 +20,36 @@
       <p>
         <strong>Press any key to start game</strong>
       </p>
+      <div class="word text-align-center">
+          <div class="col-md-12">
+              <h5>Current Word</h5>
+              <p class="activeWords"><span id="currentWordDisplay"></span></p>
+              <p class="activeWords" id="revealedAnswerDisplay"></p>
+              <p class="activeWords" id="correctDisplay"></p>      
+              <h6>Letters Already Guessed</h6>
+              <p class="activeWords"><span id="guessesMadeDisplay"></span></p>
+          </div>
+
+      </div>
     </div>
-    <h3><span id="user-text"><strong></strong></span></h3>
+  </div>
 
-    <div class="text-align-center">
-      <script type="text/javascript">
-        // Let's start by grabbing a reference to the <span> below.
-        var userText = document.getElementById("user-text");
-        // Next, we give JavaScript a function to execute when onkeyup event fires.
-        document.onkeyup = function (event) {
-          userText.textContent = event.key;
 
-        };
-      </script>
+  <div class="left text-align-center">
+    <div class="answer text-align-center">
+      <div class="question text-align-center">
+        <img src="assets/images/question.jpg" alt="questioning dog" width="200px" height="200px" id="question">
+        <div id="status">
+          <p>
+            Guesses Remaining:
+            <span class="text-align-center" id="guessesLeftDisplay">9</span>
+          </p>
+          <p>
+            Wins:
+            <span class="text-align-center" id="winsDisplay">0</span>
+          </p>
+        </div>
+
+      </div>
     </div>
   </div>

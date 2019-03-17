@@ -8,8 +8,10 @@
     width:212px;
 }
 .guessBoxContainer{
-    background-image:url(assets/images/polkadot.jpg);
+    background-image:url(/assets/images/polkadot.jpg);
     color: darkcyan;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     width: 960px;
     right: 0;
     padding: 28px 5px;
@@ -28,11 +30,40 @@
 .body{
     background-color:wheat;
 }
-
-.description{
+.left{
+    background:url(/assets/images/polkadot.jpg);
+    width: 480px;
+    color:royalblue;
+    font-size: 30px;
+    font:bold;
+    padding: 28px 5px;
+    padding-bottom: 10px;
+    border-top: 1px solid wheat;
+    position: absolute;
+    top:11px;
+    min-height: 650px;
+    padding-top: 0;
 
 }
-
-.doggies{
+.question{
+    align-items: left;
+    margin-left: 10px;
+    margin-right:100px;
 
 }
+#question{
+
+    box-align: left;
+}
+
+#status{
+
+    align-content: left;
+    margin: 16px 16px 16px 16px;
+}
+
+
+
+
+
+
