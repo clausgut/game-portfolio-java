@@ -8,7 +8,7 @@
     width:212px;
 }
 .guessBoxContainer{
-    background-image:url(/assets/images/polkadot.jpg);
+    background-image:url(assets/images/polkadot.jpg);
     color: darkcyan;
     width: 960px;
     right: 0;
