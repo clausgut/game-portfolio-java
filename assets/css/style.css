@@ -1,0 +1,38 @@
+.glassesMain{
+    margin-bottom: 1.88235rem;
+    padding-top: 0px;
+}
+
+#picClass{
+    height: 237px;
+    width:212px;
+}
+.guessBoxContainer{
+    background-image:url(/assets/images/polkadot.jpg);
+    color: darkcyan;
+    width: 960px;
+    right: 0;
+    padding: 28px 5px;
+    padding-bottom: 10px;
+    border-top: 1px solid wheat;
+    position: absolute;
+    top:11px;
+    min-height: 650px;
+    padding-top: 0;
+
+}
+
+.text-align-center{
+    text-align: center;
+}
+.body{
+    background-color:wheat;
+}
+
+.description{
+
+}
+
+.doggies{
+
+}

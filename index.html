@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>js.fungame.com</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script> src = "/assets/js/game.js"</script>
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+</head>
+
+<body class="body">
+  <div class="guessBoxContainer">
+    <div class="glassesMain text-align-center">
+      <img src="../assets/images/glasses-main.jpg" alt="Main" id="picClass" width="212px" height="237px">
+    </div>
+    <div class="description text-align-center">
+      <h1 id="doggies">Doggies</h1>
+      <p>
+        <strong>Press any key to start game</strong>
+      </p>
+    </div>
+    <h3><span id="user-text"><strong></strong></span></h3>
+
+    <div class="text-align-center">
+      <script type="text/javascript">
+        // Let's start by grabbing a reference to the <span> below.
+        var userText = document.getElementById("user-text");
+        // Next, we give JavaScript a function to execute when onkeyup event fires.
+        document.onkeyup = function (event) {
+          userText.textContent = event.key;
+
+        };
+      </script>
+    </div>
+  </div>
