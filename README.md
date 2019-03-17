@@ -1,7 +1,5 @@
 ## Welcome to Claudia's GitHub
 
-Link to my page --> (https://github.com/clausgut/game-portfolio-java/edit/master/README.md)
-
 
 
 ### Markdown
